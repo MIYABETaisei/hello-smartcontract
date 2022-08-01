@@ -11,8 +11,8 @@ contract Greeter {
         text = _text;
     }
 
-    function show() external view {
-        console.log(text);
+    function show() external view returns (string memory) {
+        return text;
     }
 
     function set(string memory _setTxt) external {
